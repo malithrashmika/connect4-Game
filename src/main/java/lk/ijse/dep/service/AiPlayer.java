@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AiPlayer extends Player {
-    private static final int NUM_SIMULATIONS = 1000;
+    private static final int NUM_SIMULATIONS = 50000;
     private final Random random;
 
     public AiPlayer(Board board) {
