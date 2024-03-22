@@ -18,7 +18,7 @@ public class HumanPlayer extends Player {
             if (board.findWinner().getWinningPiece() != Piece.EMPTY) {
                 board.getBoardUI().notifyWinner(winner);
             }
-            if (!board.existLegalMove()) {
+            if (board.existLegalMove()) {
                 board.getBoardUI().notifyWinner(new Winner(Piece.EMPTY));
             }
         }
